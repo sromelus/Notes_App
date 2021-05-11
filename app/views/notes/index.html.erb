@@ -1,0 +1,21 @@
+<% if @notes.first %>
+      <% @notes.each do |note| %>
+        <div class="card custom-card">
+          <h5 class="card-header">
+            <span class="title-detail"><%="created by #{@user.full_name}, on #{note.day_time}"%></span>
+          </h5>
+          <div class="card-body">
+            <h5 class="card-title"><%= note.title %></h5>
+            <p class="card-text"><%= note.body %></p>
+
+            <%= link_to 'Edit', edit_note_path(note), class: "btn btn-primary btn-sm"%>
+            <%= link_to 'Delete', note, method: :delete, data: { confirm: 'Are you sure?'}, class: "btn btn-outline-danger btn-sm"%>
+          </div>
+        </div>
+      <% end %>
+<% else %>
+  <div class="logo">
+    <%= link_to "New Note", new_note_path, class: "btn btn-success new-note-btn" %>
+  </div>
+<% end %>
+
