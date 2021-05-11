@@ -1,24 +1,29 @@
-# README
+# README 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+------ NOTES APP -----
 
-* Ruby version
 
-* System dependencies
+####  Ruby version 2.6.5
 
-* Configuration
+System dependencies
 
-* Database creation
+Bootsrap - styling
+Bcrypt - password hashing
+User Auth - only Dependency is Bcrypt
 
-* Database initialization
+## Startup - From the root folder
+After cloning the project repo.
+In order to run the app locally. Open the command line.
+`cd mynotes`
 
-* How to run the test suite
+#### Run
+>1. bundle install
+>2. bundle exec bundle
+>2. bundle exec rails s
 
-* Services (job queues, cache servers, search engines, etc.)
+## How to run the test suite
 
-* Deployment instructions
+You can run rspec tests with
 
-* ...
+> 1. bundle exec rspec spec/models
