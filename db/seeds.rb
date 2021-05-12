@@ -20,14 +20,14 @@ require 'faker'
 # end
 
 
-20.times do
-    user_id = (rand * 6).floor
-    wo_count = (rand * 3).floor
-    sen_count = ((rand * 40) + 20).floor
+# 20.times do
+#     user_id = (rand * 6).floor
+#     wo_count = (rand * 3).floor
+#     sen_count = ((rand * 40) + 20).floor
 
-    Note.create(
-        title: Faker::Lorem.sentence(word_count: wo_count),
-        body: Faker::Lorem.paragraph(sentence_count: sen_count),
-        user_id: user_id
-    )
-end
+#     Note.create(
+#         title: Faker::Lorem.sentence(word_count: wo_count),
+#         body: Faker::Lorem.paragraph(sentence_count: sen_count),
+#         user_id: user_id
+#     )
+# end
