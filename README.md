@@ -1,4 +1,4 @@
-# README 
+# README [![Codeship Status for sromelus/Notes_App](https://app.codeship.com/projects/ce6b552d-6e16-43c6-bc03-2f181bc00dcc/status?branch=master)](https://app.codeship.com/projects/444278)
 
 
 ------ NOTES APP -----
