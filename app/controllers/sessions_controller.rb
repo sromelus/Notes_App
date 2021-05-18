@@ -52,6 +52,12 @@ class SessionsController < ApplicationController
       redirect_to login_path, notice: "signout successful"
   end
 
+  def not_found
+    respond_to do |format|
+        format.html { render 'not_found' }
+    end
+  end
+
   private
   def signup_params
       params.permit(:first_name, :last_name, :email, :password, :confirm_password, :authenticity_token, :commit)

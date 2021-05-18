@@ -8,9 +8,9 @@ class NotesController < ApplicationController
     end
   
     # GET /notes/1
-    def show    
-      note
-    end
+    # def show    
+    #   note
+    # end
   
     # GET /notes/new
     def new
